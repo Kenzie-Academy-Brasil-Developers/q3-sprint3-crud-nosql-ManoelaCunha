@@ -2,7 +2,7 @@ import pymongo
 
 from flask import Flask
 
-from views import posts as posts_view
+from app import routes as posts_view
 
 client = pymongo.MongoClient("mongodb://localhost:27017/")
 db = client["kenzie"]
